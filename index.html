@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WhatsApp-like Chat</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="chat-container">
+        <div class="sidebar">
+            <div class="sidebar-header">
+                <div class="user-avatar">
+                    <i class="fas fa-user"></i>
+                </div>
+                <div class="sidebar-icons">
+                    <i class="fas fa-users"></i>
+                    <i class="fas fa-circle-notch"></i>
+                    <i class="fas fa-comment-alt"></i>
+                    <i class="fas fa-ellipsis-v"></i>
+                </div>
+            </div>
+            
+            <div class="search-container">
+                <div class="search-box">
+                    <i class="fas fa-search"></i>
+                    <input type="text" placeholder="Search or start new chat">
+                </div>
+            </div>
+            
+            <div class="chats-list">
+                <!-- Active chat -->
+                <div class="chat-item active">
+                    <div class="chat-avatar">
+                        <i class="fas fa-user-friends"></i>
+                    </div>
+                    <div class="chat-info">
+                        <div class="chat-header">
+                            <div class="chat-name">Family Group</div>
+                            <div class="chat-time">10:42 AM</div>
+                        </div>
+                        <div class="chat-preview">
+                            <div class="chat-message">Mom: Don't forget to buy milk</div>
+                            <div class="unread-count">3</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Other chats -->
+                <div class="chat-item">
+                    <div class="chat-avatar">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <div class="chat-info">
+                        <div class="chat-header">
+                            <div class="chat-name">Sarah Johnson</div>
+                            <div class="chat-time">Yesterday</div>
+                        </div>
+                        <div class="chat-preview">
+                            <div class="chat-message">See you tomorrow at the meeting!</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="chat-item">
+                    <div class="chat-avatar">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <div class="chat-info">
+                        <div class="chat-header">
+                            <div class="chat-name">Work Team</div>
+                            <div class="chat-time">Yesterday</div>
+                        </div>
+                        <div class="chat-preview">
+                            <div class="chat-message">Alex: I've uploaded the project files</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="chat-item">
+                    <div class="chat-avatar">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <div class="chat-info">
+                        <div class="chat-header">
+                            <div class="chat-name">Mike Wilson</div>
+                            <div class="chat-time">Wednesday</div>
+                        </div>
+                        <div class="chat-preview">
+                            <div class="chat-message">Thanks for your help with the car!</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="chat-item">
+                    <div class="chat-avatar">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <div class="chat-info">
+                        <div class="chat-header">
+                            <div class="chat-name">Emma Davis</div>
+                            <div class="chat-time">Tuesday</div>
+                        </div>
+                        <div class="chat-preview">
+                            <div class="chat-message">Are we still on for Friday?</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Main chat area -->
+        <div class="chat-area">
+            <div class="chat-header">
+                <div class="chat-contact">
+                    <div class="chat-contact-avatar">
+                        <i class="fas fa-user-friends"></i>
+                    </div>
+                    <div class="chat-contact-info">
+                        <div class="chat-contact-name">Family Group</div>
+                        <div class="chat-contact-status">Mom, Dad, You, Brother, Sister</div>
+                    </div>
+                </div>
+                <div class="chat-actions">
+                    <i class="fas fa-search"></i>
+                    <i class="fas fa-paperclip"></i>
+                    <i class="fas fa-ellipsis-v"></i>
+                </div>
+            </div>
+            
+            <div class="messages-container">
+                <!-- Received message -->
+                <div class="message message-received">
+                    <div>Hey everyone, don't forget we're having dinner together this Sunday at 7 PM!</div>
+                    <div class="message-time">10:30 AM</div>
+                </div>
+                
+                <!-- Sent message -->
+                <div class="message message-sent">
+                    <div>I'll be there! Should I bring anything?</div>
+                    <div class="message-time">10:32 AM</div>
+                </div>
+                
+                <!-- Received message -->
+                <div class="message message-received">
+                    <div>Could you pick up some drinks? Soda and maybe some juice for the kids.</div>
+                    <div class="message-time">10:35 AM</div>
+                </div>
+                
+                <!-- Sent message -->
+                <div class="message message-sent">
+                    <div>Sure, no problem! I'll get both.</div>
+                    <div class="message-time">10:36 AM</div>
+                </div>
+                
+                <!-- Received message -->
+                <div class="message message-received">
+                    <div>Thanks! And don't forget to buy milk on your way home today. We're almost out.</div>
+                    <div class="message-time">10:40 AM</div>
+                </div>
+                
+                <!-- Sent message -->
+                <div class="message message-sent">
+                    <div>Okay, I'll stop by the store after work.</div>
+                    <div class="message-time">10:42 AM</div>
+                </div>
+            </div>
+            
+            <div class="message-input-container">
+                <div class="input-actions">
+                    <i class="far fa-smile"></i>
+                    <i class="fas fa-paperclip"></i>
+                </div>
+                <div class="message-input">
+                    <input type="text" placeholder="Type a message">
+                </div>
+                <div class="send-button">
+                    <i class="fas fa-microphone"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
