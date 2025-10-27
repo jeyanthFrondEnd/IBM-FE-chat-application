@@ -38,8 +38,13 @@ You only need a modern web browser (like Chrome, Firefox, or Safari) to view thi
 
 ## 📁 Project Structure
 IBM-FE-chat-application/ Root The main project directory.
+
 index.html Perfect The main entry file, located at the root, which GitHub Pages requires.
+
 style.css Good Your CSS file.
+
 script.js Good Your JavaScript file.
+
 README.md Excellent Clearly explains your project right on the front page.
-Output-Imgs/ Good Contains your image assets.
+
+Output-Imgs/ Good Contains all output images.
