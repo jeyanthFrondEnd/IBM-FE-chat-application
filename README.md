@@ -27,7 +27,7 @@ You only need a modern web browser (like Chrome, Firefox, or Safari) to view thi
 
 1.  **Clone the Repository (Optional, for local development):**
     ```bash
-    git clone [Your Repository URL]
+    git clone [https://github.com/jeyanthFrondEnd/IBM-FE-chat-application.git]
     ```
 2.  **Download Files (Recommended for quick view):**
     You can also download the ZIP file directly from the GitHub repository page.
